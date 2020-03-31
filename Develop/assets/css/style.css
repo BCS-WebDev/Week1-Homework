@@ -11,6 +11,8 @@
 
 body {
     background-color: #d9dcd6;
+    min-width: 1130px;  /* added to preserve webpage structure when broswer falls below width: 1060px
+                            - main & aside alignment threshold is width: 1128px; */
 }
 
 p {
@@ -58,7 +60,8 @@ header nav ul li {
     margin-left: 25px;
 }
 
-a {
+/* a changed to header nav ul li a for consistency*/
+header nav ul li a {
     color: #ffffff;
     text-decoration: none;
 }
@@ -88,8 +91,8 @@ a {
     margin-left: 20px;
 }
 
-/* sections */
-.search-engine-optimization {
+/* sections - grouping duplicate code */
+.search-engine-optimization, .online-reputation-management, .social-media-marketing {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -98,60 +101,24 @@ a {
     color: #ffffff;
 }
 
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-/* section images */
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
+/* section images - grouping duplicate code */
+.search-engine-optimization img, .online-reputation-management img, .social-media-marketing img {
     max-height: 200px;
 }
 
 /* section headers */
-.search-engine-optimization h2 {
+.search-engine-optimization h2, .online-reputation-management h2, .social-media-marketing h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-/* floats */
-.float-left {
+/* floats - categorized for consistency*/
+.search-engine-optimization .float-left, .social-media-marketing .float-left {
     float: left;
     margin-right: 25px;
 }
 
-.float-right {
+.online-reputation-management .float-right {
     float: right;
     margin-left: 25px;
 }
@@ -171,54 +138,23 @@ a {
     background-color: #2589bd;
 }
 
-/* aside section font */
-.benefit-lead {
+/* aside section font - grouping duplicate code */
+.benefit-lead, .benefit-brand, .benefit-cost {
+    min-height: 268px;  /* added to preserve alignment of main and aside division when browser exceeds width: 1260px */
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-/* aside section header */
-.benefit-lead h3 {
-    margin-bottom: 10px;
+/* aside section header - grouping dulicate code */
+.benefit-lead h3, .benefit-brand h3, .benefit-cost h3 {
+    /* margin-bottom: 10px; - omitted to line up main and aside boxes */
     text-align: center;
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-/* aside section images */
-.benefit-lead img {
+/* aside section images - grouping duplicate code */
+.benefit-lead img, .benefit-brand img, .benefit-cost img {
     display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
+    margin: 0 auto; /* 10px changed to 0 - to line up main and aside boxes */
     max-width: 150px;
 }
 
