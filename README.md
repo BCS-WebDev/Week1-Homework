@@ -8,28 +8,27 @@ diverse abilities. Recognized by the UN as a basic human right, the Web supports
 inclusion for people with disabilities, of older generations, and in developing countries.
 Their Web traffic makes up an estimated 15%, making Web Accessibility ever important.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; An example of making a web accessible is providing
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; An example of making a webpage accessible is providing
 "equivalent alternative text" to images. Alt text can be vital for people who use a screen
 reader that reads aloud information on a webpage due to their inability to see. Providing
-transcripts for audio files can benefit those who cannot hear, and Speech input, in lieu
+transcripts for audio files can benefit those who cannot hear, and speech input, in lieu
 of having a website rely on mouse input, can benefit those who lack motor control.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; There is however, a case for accessibility in terms
 of business. This type of accessibility focuses on increasing exposure via mobile web
-design, device indepedence, multi-modal interaction, and SEO(Search Engine Optimization)
-to gain a bigger audience and an understanding of it. 
+design, device indepedence, and SEO(Search Engine Optimization) to gain a bigger audience. 
 
 # Motive & Action
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In this particular case, our client from a Marketing
 Agency wants their website to be optimized for search engines. So, besides code refactoring and
 meeting accessibility standards, we will be implemeting SEO to rank higher and distinguish
 itself in a search that can yield over a 100 million results. This tends to be a problem
-because nearly all online experiences begin with a search engine, which can generate
-passive traffic to a website. Paid searches that come up in the form of ads can be used
-to appear on the front page but not everyone has this luxury.
+because nearly all online experiences begin with a search engine. While paid searches
+come up in the form of ads can be used to appear on the front page, we will look to generate
+passive traffic to a website via code.
 
 * HTML:
-    - Semantic HTML: Semantic tags added for code readability & organization
+    - Semantic HTML - Semantic tags added for code readability & organization
     - Codebase follows logical structure
     - Alt attributes added to images as 'alt', element title, or aria-label
     - Element attributes always lead with class
@@ -45,8 +44,12 @@ to appear on the front page but not everyone has this luxury.
         - min-height added to aside sections
 
 * Webpage Accessibliity Standards:
-    - check different browsers, devices(mobile)
-    - social inclusion
+    - Pending: Detect mobile device through javascript for mobile website
+    - Social inclusion
+        - Disabled
+        - Translation
+        - Older generation
+        - Underpriveliged
 
 * SEO:
     - Title Tag
@@ -69,6 +72,20 @@ to appear on the front page but not everyone has this luxury.
     - Canonical Tag
         - A website will have duplicate webpages
         - Prioritize one webpage to have this single webpage rank higher
-        - Linked Canonical Tag
-    - NoFollow
-        - If linking out external website, link as "nofollow"
+        - Linked Canonical Tag - https://www.horiseon.com/
+    - Robot Tag
+        - If linking out to external website, tag as "nofollow"
+        - If trivial pages exist, tag as "noindex"
+    - Google Search - Schema Markup
+        - Structured Data to help Google find website info
+            - Raise chance to appear in Knowledge Graphs
+            - Allows for Rich Snippets in search results
+        - Make website mobile-friendly for higher rank
+        - Use Google Analytics to track keywords
+    - Social Media
+        - Open Graph Tags
+            - Allows webpages to become rich objects in social networks
+            - Added OG Title, OG Description, OG Image
+        - Twitter Card
+            - Open Graph used exclusively for Twitter
+            - Added Twitter Card

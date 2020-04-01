@@ -7,6 +7,20 @@
     <meta name="description"
         content="Horiseon is a Marketing Agency that focuses on Online Marketing Optimization & Reputation Management.
                 Take your Online Marketing to the next level!"/>
+    <!-- Viewport properties -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Open Graph Tags -->
+    <meta name="og:title" property="og:title" content="Horiseon - Online Marketing Optimization & Reputation Management"> 
+    <meta name="og:description" property="og:description"
+        content="Take your business to the next level with Horiseon. your solution for Online & Social Media Marketing."> 
+    <meta name="og:image" property="og:image" content="./assets/images/search-engine-optimization.jpg">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@horiseon">
+    <meta name="twitter:title" content="Horiseon - Online Marketing Optimization & Reputation Management">
+    <meta name="twitter:description"
+        content="Take your business to the next level with Horiseon. your solution for Online & Social Media Marketing.">
+    <meta name="twitter:image" content="./assets/images/search-engine-optimization.jpg">
 
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- Adding Canonical link for SEO -->
@@ -17,6 +31,58 @@
         - changed from "website" to "Online Marketing Optimization & Reputation Management"
         - further changed to include company name -->
     <title>Horiseon - Online Marketing Optimization & Reputation Management</title>
+
+    <!-- Schema structured data will help Google find info about the website, increasing rank -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Marketing Agency",
+        "@id": "https://www.horiseon.com/",
+        "name": "Horiseon",
+        "legalName": "Horiseon Social Solution Services, Inc.",
+        "areaServed": {
+            "US-CA",
+            "US-NY",
+            "US-FL",
+            "US-WA",
+            "US-IL",
+            "US-ME",
+            "US-TX",
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "1145 Gayley Ave",
+            "addressLocality": " Los Angeles",
+            "addressRegion": "CA",
+            "postalCode": "90024",
+            "addressCountry": "US"
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+            ],
+            "opens": "09:00",
+            "closes": "21:00"
+        },
+        "image": [
+            "./assets/images/search-engine-optimization.jpg",
+            "./assets/images/online-reputation-management.jpg",
+            "./assets/images/social-media-marketing.jpg"
+        ],
+        "telephone": "+13102084146",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.5",
+            "reviewCount": "21"
+        }
+    }
+    </script>
 </head>
 
 <body>
