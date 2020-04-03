@@ -23,10 +23,6 @@
     <meta name="twitter:image" content="./assets/images/search-engine-optimization.jpg">
 
     <link rel="stylesheet" href="./assets/css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <!-- Adding Canonical link for SEO -->
     <link rel="canonical" href="https://www.horiseon.com/">
 
@@ -96,37 +92,46 @@
 
         <!-- <div> changed to <nav> for Navigation Links -->
         <nav>
-            <!-- nav button added for smaller viewports -->
-            <div class="dropdown" aria-haspopup="true">
+            <!-- nav button added for smaller viewports
+                - dropdown button appears at viewport width 620px and lower
+                - hover to show menu
+                    - touch may not be functional for all devices and browsers (needs javascript function for this) -->
+            <div class="dropdown">
+                <!-- nav bar dropdown button png -->
                 <span><img src="./assets/images/NavBarButton.png"></span>
                 <div class="dropdown-content">
+                    <!-- links to content on page -->
                     <ul>
                         <li>
-                            <a href="#search-engine-optimization">Search Engine Optimization</a>
+                            <a href="#search-engine-optimization" aria-keyshortcuts="s">Search Engine Optimization</a>
                         </li>
         
                         <li>
-                            <a href="#online-reputation-management">Online Reputation Management</a>
+                            <a href="#online-reputation-management" aria-keyshortcuts="o">Online Reputation Management</a>
                         </li>
         
                         <li>
-                            <a href="#social-media-marketing">Social Media Marketing</a>
+                            <a href="#social-media-marketing" aria-keyshortcuts="m">Social Media Marketing</a>
                         </li>
                     </ul>
                 </div>
             </div>
 
+            <!-- links to content on page
+                - originially listed horizontally
+                - turns into vertical list at 1040px and lower
+                - display: none at 620px and lower -->
             <ul>
                 <li>
-                    <a href="#search-engine-optimization">Search Engine Optimization</a>
+                    <a href="#search-engine-optimization" aria-keyshortcuts="s">Search Engine Optimization</a>
                 </li>
 
                 <li>
-                    <a href="#online-reputation-management">Online Reputation Management</a>
+                    <a href="#online-reputation-management" aria-keyshortcuts="o">Online Reputation Management</a>
                 </li>
 
                 <li>
-                    <a href="#social-media-marketing">Social Media Marketing</a>
+                    <a href="#social-media-marketing" aria-keyshortcuts="m">Social Media Marketing</a>
                 </li>
             </ul>
         </nav>
@@ -135,23 +140,27 @@
     <!-- Enclosed in <figure> for semantic html -->
     <figure>
         <!-- <div> changed to <img> for Image
+            - changes size according to viewport width
             *** Image uses css to source. Alt text not essential in this case.
                 But for sake of accessibility and preservation of original code structure,
                 'aria-label' can be used to ensure speech readers will read.
-                CSS class title may not always be sufficient. -->
+                CSS class title may not always be sufficient. Will also help with SEO in terms of rank. -->
         <img class="digital-marketing-meeting" aria-label="Horiseon - Digital Marketing Meeting">
     </figure>
 
-    <!-- <div class="content"> changed to <main> for semantic html -->
+    <!-- <div class="content"> changed to <main> for semantic html
+        - main width changes to 100% at 1145px and lower -->
     <main class="services">
         <!-- Search Engine Optimization navigation link in header missing functionality
-            - added id="search-egine-optimization"
-            - <div> changed to <section> for semantic html -->
+            - added id="search-engine-optimization"
+            - <div> changed to <section> for semantic html
+            - section height changes to 100% at 800px and lower from fixed height of 300px -->
         <section class="search-engine-optimization" id="search-engine-optimization" >
             <!-- added <figure> for semantic html
-                - added 'alt' for images -->
+                - added 'alt' for images
+                - stops floating at 800px and lower -->
             <figure>
-                <img src="./assets/images/search-engine-optimization.jpg" class="float-left" alt="Horiseon - SEO Brainstorming">
+                <img class="float-left" src="./assets/images/search-engine-optimization.jpg" alt="Horiseon - SEO Brainstorming">
             </figure>
 
             <h2 class=>Search Engine Optimization</h2>
@@ -194,7 +203,8 @@
         </section>
     </main>
 
-    <!-- <div> changed to <aside> for semantic html -->
+    <!-- <div> changed to <aside> for semantic html
+        - aside width changes to 100% and stops float at 1145px and lower -->
     <aside class="benefits">
         <!-- <div> changed to <section> for semantic html -->
         <section class="benefit-lead">

@@ -50,8 +50,8 @@ header nav {
 }
 
 header nav img {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
 }
 
 header nav ul {
@@ -72,7 +72,7 @@ header nav ul li a {
 /* Dropdown menu */
 .dropdown {
     position: relative;
-    top: 13px;
+    top: 15px;
     right: 20px;
     display: none;
 }
@@ -81,7 +81,7 @@ header nav ul li a {
     display: none;
     position: absolute;
     background-color: #2a607c;
-    padding: 23px 35px;
+    padding: 26px 35px;
     z-index: 1;
 }
 
@@ -214,9 +214,32 @@ footer h2 {
 /////////////////////////////// Device Accessibility //////////////////////////////////
 */
 
-/* Changes according to browser width 
-    - added to preserve webpage structure when broswer falls below width: 1060px
-    - main & aside alignment threshold is width: 1128px; */ 
+/* Changes according to browser width 1130px */ 
+@media screen and (max-width: 1145px) {
+    /* main & aside */
+    .services {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .digital-marketing-meeting {
+        height: 750px;
+    }
+
+    .benefits {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 20px;
+        float: none;
+        width: 100%;
+    }
+
+    .benefit-lead, .benefit-brand, .benefit-cost {
+        margin-bottom: 0;
+    }
+}
+
+/* Changes according to browser width 1040px */ 
 @media screen and (max-width: 1040px) {
     /* header */
     header {
@@ -228,12 +251,42 @@ footer h2 {
         margin-right: 0;
         padding-top: 0;
         background-color: #2a607c;
-    }    
+    }
+
+    .digital-marketing-meeting {
+        height: 700px;
+    }
+}
+
+/* Changes according to browser width 800px */ 
+@media screen and (max-width: 800px) {
+    .digital-marketing-meeting {
+        height: 650px;
+    }
+
+    /* main sections */
+    .search-engine-optimization, .online-reputation-management, .social-media-marketing {
+        height: 100%;
+    }
+
+    .search-engine-optimization .float-left, .social-media-marketing .float-left {
+        float: none;
+        margin-right: 0;
+    }
+    
+    .online-reputation-management .float-right {
+        float: none;
+        margin-left: 0;
+    }
 }
 
 /* Mobile Accessibility
     - Changes according to viewport width in CSS-resolution (i.e. smartphone pixel ratio) */
 @media screen and (max-width: 620px) {
+    .digital-marketing-meeting {
+        height: 600px;
+    }
+
     /* nav button */
     header nav {
         width: 50px;

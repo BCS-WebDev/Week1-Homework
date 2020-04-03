@@ -27,30 +27,32 @@ because nearly all online experiences begin with a search engine. While paid sea
 come up in the form of ads can be used to appear on the front page, we will look to generate
 passive traffic to a website via code.
 
-* HTML:
-    - Semantic HTML - Semantic tags added for code readability & organization
-    - Codebase follows logical structure
-    - Alt attributes added to images as 'alt', element title, or aria-label
-    - Element attributes always lead with class
-    - Descriptive Webapge Title added
-
-* CSS:
-    - Changed class titles as necessary to fit semantic html
-    - Arranged classes and grouped by section and sub-sections
-    - Grouped duplicate code where possible
-    - Tweaked to align main and aside divisions
-    - Webpage structure & alignment breaks down at certain browser width thresholds
-        - Added different style for viewport widths
-
 * Webpage Accessibliity Standards:
-    - Mobile Device Accessibility
-        - Change CSS style according to viewport widths less than 640px
-    - Social inclusion
-        - Disabled
-        - Translation
-        - Older generation
-        - Underpriveliged
+    - HTML
+        - Semantic HTML - Semantic tags added for code readability & organization
+        - Codebase follows logical structure
+        - Alt attributes added to images as 'alt', element title, or aria-label
+            - To help with sight impairments via speech readers
+        - Element attributes always lead with class
+        - Descriptive Webapge Title added
+        - Fixed shortcut link functionality
+        - Added aria-keyshortcuts to nav bar links
+            - To help with limited motor control
 
+    - CSS
+        - Changed class titles as necessary to fit semantic html
+        - Main figure resizes according to viewport width
+        - Arranged classes and grouped by section and sub-sections
+        - Grouped duplicate code where possible
+        - Webpage color scheme is acceptable
+            - To help with visibility
+        - Webpage structure & alignment breaks down at certain browser width thresholds
+            - Added different styles for varying viewport widths
+
+    - Mobile Device Accessibility
+        - Change CSS style according to viewport widths less than 620px
+        - Added Nav bar dropdown button
+    
 * SEO:
     - Title Tag
         - Will show up as the title of the search link
