@@ -14,7 +14,7 @@ reader that reads aloud information on a webpage due to their inability to see. 
 transcripts for audio files can benefit those who cannot hear, and speech input, in lieu
 of having a website rely on mouse input, can benefit those who lack motor control.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; There is however, a case for accessibility in terms
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; There is also, however, a case for accessibility in terms
 of business. This type of accessibility focuses on increasing exposure via mobile web
 design, device indepedence, and SEO(Search Engine Optimization) to gain a bigger audience. 
 
@@ -39,12 +39,12 @@ passive traffic to a website via code.
     - Arranged classes and grouped by section and sub-sections
     - Grouped duplicate code where possible
     - Tweaked to align main and aside divisions
-    - Webpage structure & alignment breaks down at certain body width thresholds
-        - min-width added to body
-        - min-height added to aside sections
+    - Webpage structure & alignment breaks down at certain browser width thresholds
+        - Added different style for viewport widths
 
 * Webpage Accessibliity Standards:
-    - Pending: Detect mobile device through javascript for mobile website
+    - Mobile Device Accessibility
+        - Change CSS style according to viewport widths less than 640px
     - Social inclusion
         - Disabled
         - Translation
