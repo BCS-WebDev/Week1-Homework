@@ -1,7 +1,7 @@
-# Week1-Homework
+# Search Engine Optimization
 BootCampSpot Web Development - Week 1 Homework
 
-# Notes on Accessiblity
+## Notes on Accessiblity
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Accessibility as it pertains to the World Wide Web
 primarily revolves around providing equal access and equal opportunity to people with
 diverse abilities. Recognized by the UN as a basic human right, the Web supports social
@@ -18,7 +18,7 @@ of having a website rely on mouse input, can benefit those who lack motor contro
 of business. This type of accessibility focuses on increasing exposure via mobile web
 design, device indepedence, and SEO(Search Engine Optimization) to gain a bigger audience. 
 
-# Motive & Action
+## Motive & Action
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In this particular case, our client from a Marketing
 Agency wants their website to be optimized for search engines. So, besides code refactoring and
 meeting accessibility standards, we will be implemeting SEO to rank higher and distinguish
