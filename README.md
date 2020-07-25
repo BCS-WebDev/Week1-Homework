@@ -1,6 +1,8 @@
 # Search Engine Optimization
 BootCampSpot Web Development - Week 1 Homework
 
+![Preview](https://github.com/BCS-WebDev/Week1-Homework/blob/master/Develop/assets/Horiseon.gif)
+
 ## Notes on Accessiblity
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Accessibility as it pertains to the World Wide Web
 primarily revolves around providing equal access and equal opportunity to people with
